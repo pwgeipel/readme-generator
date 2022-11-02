@@ -41,7 +41,7 @@ const questions = [
         type: "list",
         message: "Choose a license for the application",
         name: "license",
-        choices: ['MIT', 'Apache', 'Unlicense', 'GNU General Public License', 'Mozilla Public License', 'Eclipse Public License', 'Berkeley Source Distribution (BSD)'],
+        choices: ['MIT', 'Apache', 'Unlicense', 'GNU General Public License', 'Mozilla Public License', 'Eclipse Public License', 'Berkeley Source Distribution (BSD)', 'N/A'],
     }
         
 
