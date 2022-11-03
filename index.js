@@ -35,13 +35,33 @@ const questions = [
         name: "usage",
     },{
         type: "input",
-        message: "Provide a screenshot of the project being used.",
+        message: "Provide a screenshot of the project with ![alt text](assets/images/screenshot.png)",
         name: "screenshot",
+    },{
+        type: "input",
+        message: "List your collaborators, if any, with links to their GitHub profiles.",
+        name: "collaborators",
+    },{
+        type: "input",
+        message: "If you used any tutorials or third-party assets that require attribution, list them here and include links.",
+        name: "tutorials"        
     },{
         type: "list",
         message: "Choose a license for the application",
         name: "license",
         choices: ['MIT', 'Apache', 'Unlicense', 'GNU General Public License', 'Mozilla Public License', 'Eclipse Public License', 'Berkeley Source Distribution (BSD)', 'N/A'],
+    },{
+        type: "input",
+        message: "Describe how a user may test this application.",
+        name: "test",
+    },{
+        type: "input",
+        message: "Provide your contact e-mail.",
+        name: "email",
+    },{
+        type: "input",
+        message: "Add your Github username.",
+        name: "github",
     }
         
 

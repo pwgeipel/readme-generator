@@ -14,6 +14,45 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+## Description
+
+  - ${data.motivation}
+  - ${data.whyBuild}
+  - ${data.problem}
+  - ${data.install}
+
+## Table of Contents
+
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[Credits](#credits)
+  -[License](#license)
+  -[Tests](#tests)
+  -[Questions](#questions)
+
+## Installation
+In order to install this application, please follow these steps:
+- ${data.install}
+
+## Usage
+
+![alt text](${data.screenshot})
+
+## Credits
+
+- ${data.collaborators}
+- ${data.tutorials}
+
+## License
+
+- ${data.license}
+
+## Tests
+
+- ${data.test}
+
+## Questions
+If you have any questions, please contact me at ${data.email}.  You may also see more of my projects at [${data.github}](https://github.com/${data.github}/).
 `;
 }
 
