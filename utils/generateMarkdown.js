@@ -19,21 +19,21 @@ const generateMarkdown = (data) => {
 
   ## Description
 
-    - ${data.motivation}
-    - ${data.whyBuild}
-    - ${data.problem}
-    - ${data.install}
+  - ${data.motivation}
+  - ${data.whyBuild}
+  - ${data.problem}
+  
 
   ## Table of Contents
 
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Credits](#credits)
-    -[License](#license)
-    -[Tests](#tests)
-    -[Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
-  ## Installation <a name="installation"></a>
+  ## Installation
   In order to install this application, please follow these steps:
   - ${data.install}
 
