@@ -11,49 +11,52 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+const generateMarkdown = (data) => {
+  
+  const {title, motivation, whyBuild, problem, install, learn, usage, screenshot, collaborators, tutorials, license, test, email, github} = data
+  return `
+  # ${data.title}
 
-## Description
+  ## Description
 
-  - ${data.motivation}
-  - ${data.whyBuild}
-  - ${data.problem}
+    - ${data.motivation}
+    - ${data.whyBuild}
+    - ${data.problem}
+    - ${data.install}
+
+  ## Table of Contents
+
+    -[Installation](#installation)
+    -[Usage](#usage)
+    -[Credits](#credits)
+    -[License](#license)
+    -[Tests](#tests)
+    -[Questions](#questions)
+
+  ## Installation
+  In order to install this application, please follow these steps:
   - ${data.install}
 
-## Table of Contents
+  ## Usage
 
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Credits](#credits)
-  -[License](#license)
-  -[Tests](#tests)
-  -[Questions](#questions)
+  ![alt text](${data.screenshot})
 
-## Installation
-In order to install this application, please follow these steps:
-- ${data.install}
+  ## Credits
 
-## Usage
+  - ${data.collaborators}
+  - ${data.tutorials}
 
-![alt text](${data.screenshot})
+  ## License
 
-## Credits
+  - ${data.license}
 
-- ${data.collaborators}
-- ${data.tutorials}
+  ## Tests
 
-## License
+  - ${data.test}
 
-- ${data.license}
-
-## Tests
-
-- ${data.test}
-
-## Questions
-If you have any questions, please contact me at ${data.email}.  You may also see more of my projects at [${data.github}](https://github.com/${data.github}/).
-`;
+  ## Questions
+  If you have any questions, please contact me at ${data.email}.  You may also see more of my projects at [${data.github}](https://github.com/${data.github}/).
+  `;
 }
 
-module.exports = generateMarkdown;
+export default generateMarkdown;
