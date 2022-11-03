@@ -1,10 +1,7 @@
-// TODO: Include packages needed for this application
 import fs from "fs"
 import inquirer from 'inquirer';
-
-
 import generateMarkdown from './utils/generateMarkdown.js'
-// TODO: Create an array of questions for user input
+
 inquirer.prompt([
     {
         type: "input",
@@ -64,8 +61,6 @@ inquirer.prompt([
         message: "Add your Github username.",
         name: "github",
     }
-        
-
 ])
     .then(data => {
         console.log(data)
@@ -78,17 +73,3 @@ inquirer.prompt([
     })
     })
     .catch(error => console.log(error))
-
-
-
-
-
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();

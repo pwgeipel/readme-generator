@@ -10,7 +10,6 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) => {
   
   // const {title, motivation, whyBuild, problem, install, learn, usage, screenshot, collaborators, tutorials, license, test, email, github} = data
