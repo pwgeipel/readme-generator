@@ -69,6 +69,13 @@ inquirer.prompt([
 ])
     .then(data => {
         console.log(data)
+
+        const markdown = generateMarkdown(data)
+
+        fs.writeFile('./README.md', markdown, error => {
+            if (error) throw error
+            console.log('README saved!')
+    })
     })
     .catch(error => console.log(error))
 

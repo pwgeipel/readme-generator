@@ -33,7 +33,7 @@ const generateMarkdown = (data) => {
     -[Tests](#tests)
     -[Questions](#questions)
 
-  ## Installation
+  ## Installation <a name="installation"></a>
   In order to install this application, please follow these steps:
   - ${data.install}
 
